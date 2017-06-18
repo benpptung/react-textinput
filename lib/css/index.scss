@@ -4,6 +4,7 @@ $gray-light: #777;
 $gray-lighter: #eee;
 
 $label-color: darken($gray-lighter, 15%);
+$info-color: #669900;
 $warning-color: hotpink;
 
 
@@ -26,8 +27,12 @@ $warning-color: hotpink;
   }
 
   .message {
-      color: $warning-color;
+      color: $info-color;
       font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+
+    &.warn {
+      color: $warning-color;
+    }
   }
 
   // while the label floating up
