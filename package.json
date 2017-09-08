@@ -25,6 +25,11 @@
   },
   "devDependencies": {
     "appstackr": "^0.3.18",
+    "eslint": "^4.6.1",
+    "eslint-config-less": "github:benpptung/eslint-config-less",
+    "eslint-config-less-react": "github:benpptung/eslint-config-less-react",
+    "eslint-plugin-node": "^5.1.1",
+    "eslint-plugin-react": "^7.3.0",
     "react-tap-event-plugin": "^2.0.1"
   },
   "homepage": "https://github.com/benpptung/react-textinput",
@@ -42,6 +47,11 @@
   },
   "scripts": {
     "appstack": "appstack",
-    "bsync": "appwatch -b"
-  }
+    "bsync": "appwatch -b",
+    "eslint": "TIMING=1 eslint . --ignore-pattern node_modules/"
+  },
+  "eslintIgnore": [
+    "*.min.js",
+    "site/**/*.js"
+  ]
 }

@@ -1,12 +1,11 @@
-'use strict';
+'use strict'
 
-const React = require('react');
-const ReactDOM = require('react-dom');
-const TextInput = require('./lib/');
+const React = require('react')
+const ReactDOM = require('react-dom')
+const TextInput = require('./lib/')
 
+/* eslint-disable no-console */
 
-
-/*jshint ignore:start */
 var test = (
   <div>
     <div>
@@ -14,28 +13,27 @@ var test = (
                  message="we will email you a link to sign in"
                  type="email"
                  onChange={onChange}
-                 validator={validator}
-        />
+                 validator={validator} />
     </div>
-    <p></p>
-    <p></p>
+    <p />
+    <p />
   </div>
-);
+)
 
-var mountnode = document.getElementById('mountnode');
+var mountnode = document.getElementById('mountnode')
 if (mountnode) {
   ReactDOM.render(
     test,
-    mountnode);
+    mountnode)
 }
 
 
 function onChange(email) {
-  console.log(email);
+  console.log(email)
 }
 
 function validator(text) {
   if (!/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(text)) {
-    return 'it looks not a valid email address';
+    return 'it looks not a valid email address'
   }
 }
