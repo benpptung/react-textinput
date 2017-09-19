@@ -5,7 +5,7 @@ const ReactDOM = require('react-dom')
 const TextInput = require('./lib/')
 
 /* eslint-disable no-console */
-
+/* eslint-disable no-useless-escape */
 var test = (
   <div>
     <div>
