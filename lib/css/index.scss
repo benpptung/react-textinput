@@ -13,17 +13,17 @@ $warning-color: hotpink;
   box-sizing: border-box;
 }
 
-.react-textinput-e063802d {
+.label-e063802d {
+  color: $label-color;
+  //font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+}
 
-  > .label-e063802d {
-    color: $label-color;
-    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-  }
+.react-textinput-e063802d {
 
   > .input-e063802d {
     background-color: transparent;
     border-bottom: 1px solid lighten($gray-light, 25%);
-    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    //font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
   }
 
   .message {
