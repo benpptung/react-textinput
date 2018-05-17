@@ -29,7 +29,7 @@
     "eslint-config-less-react": "github:benpptung/eslint-config-less-react",
     "eslint-plugin-node": "^5.1.1",
     "eslint-plugin-react": "^7.3.0",
-    "react-tap-event-plugin": "^2.0.1"
+    "react-tap-event-plugin": "^3.0.2"
   },
   "peerDependencies": {
     "react": "^15.3.0 || ^16.0.0"
